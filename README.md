@@ -11,8 +11,9 @@ Usage example:
 from box_requests import boxsession
 
 session=boxsession("boxtoken.dat")
-u=session.request("/2.0/users/me")
-print "User is %s" % u['login']
+with session:
+  u=session.request("/2.0/users/me")
+  print "User is %s" % u['login']
 ```
 
 
