@@ -1,0 +1,5 @@
+*~
+*.pyc
+/box_requests.egg-info
+/build
+/dist
