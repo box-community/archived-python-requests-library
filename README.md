@@ -12,18 +12,18 @@ from box_requests import boxsession
 
 session=boxsession("boxtoken.dat")
 with session:
-  u=session.request("/2.0/users/me")
+  u=session.request("GET", "/2.0/users/me")
   print "User is %s" % u['login']
 ```
 
 
 
-Supported features
+Features
 ----------------------------
 
 - OAuth token management (including saving refresh token on update)
 - retry on 429 errors
-
+- Based on the [Python Requests](http://python-requests.org/) library. Keyword args passed to boxession's request method are passed to requests' session.request
 
 Included sample scripts
 ----------------------------
