@@ -1,3 +1,8 @@
+<img src="images/box-dev-logo-clip.png" 
+alt= “box-dev-logo” 
+style="margin-left:-10px;"
+width=40%;>
+
 box_session - Python helper for [Box](http://box.com) API
 -----------------------------------------------------------
 
